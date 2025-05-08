@@ -1,0 +1,103 @@
+/* Wrapper that holds both sign-up forms side by side */
+.signup-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f5f6f8; /* Light background */
+    min-height: 100vh;
+  }
+  
+  /* Each card’s container */
+  .signup-card {
+    background-color: #fff;
+    width: 350px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Icon styling at the top of each card */
+  .signup-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card Title: "Sign up as a Brand/Influencer" */
+  .signup-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* Subtitle: "Create an account to..." */
+  .signup-subtitle {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Layout */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  /* Labels */
+  .signup-form label {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  /* Inputs & Selects */
+  .signup-form input,
+  .signup-form select {
+    padding: 0.55rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-form input::placeholder {
+    color: #bbb;
+  }
+  
+  /* Focus State */
+  .signup-form input:focus,
+  .signup-form select:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  /* Submit Button */
+  .signup-button {
+    background-color: #276ef1; /* Example brand color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .signup-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive - stack forms on smaller screens */
+  @media (max-width: 768px) {
+    .signup-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

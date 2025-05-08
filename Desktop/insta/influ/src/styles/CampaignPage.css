@@ -1,0 +1,90 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0e7f7;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .signup-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .illustration {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .chart-icon, .person-icon, .camera-icon, .desk-icon {
+    position: absolute;
+    background: #ccc; /* Replace with actual icons or images */
+    border-radius: 50%;
+  }
+  
+  .chart-icon {
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 100px;
+  }
+  
+  .person-icon {
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    left: 110px;
+  }
+  
+  .camera-icon {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 100px;
+  }
+  
+  .desk-icon {
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 90px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .action-btn {
+    background-color: #d4f70c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }

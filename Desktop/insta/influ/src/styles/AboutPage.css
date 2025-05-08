@@ -1,0 +1,79 @@
+.about-page {
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .about-header {
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .image-section {
+    margin-bottom: 40px;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-section {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: left;
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  .text-section p {
+    margin-bottom: 20px;
+  }
+  
+  .faq-section {
+    margin: 40px 0;
+  }
+  
+  .faq-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    background: rgba(147, 112, 219, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .faq-check {
+    color: #d4f70c;
+    font-size: 1.2em;
+  }

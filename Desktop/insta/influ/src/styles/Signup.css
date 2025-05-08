@@ -1,0 +1,124 @@
+/* Container for the full page */
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa; /* Match background from CampaignListingPage */
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* The card container */
+.signup-card {
+  background-color: #fff;
+  width: 380px;
+  max-width: 90%;
+  border-radius: 12px; /* Match card radius from CampaignListingPage */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Match shadow */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Icon styling at the top of each card */
+.signup-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Card Title: "Sign up as a Brand/Influencer" */
+.signup-title {
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+  font-weight: 600;
+  color: #1a1a1a; /* Match text color */
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle: "Create an account to..." */
+.signup-subtitle {
+  font-size: 0.9rem;
+  color: #666; /* Match secondary text color */
+  margin-bottom: 1.5rem;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 0.85rem;
+  color: #ff4d4f; /* Match error color from CampaignListingPage */
+  margin-bottom: 1rem;
+}
+
+/* Form Layout */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Labels */
+.form-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+/* Inputs & Selects */
+.form-input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e8ecef; /* Match border color */
+  border-radius: 8px; /* Match input radius */
+  font-size: 0.9rem;
+}
+
+.form-input::placeholder {
+  color: #bbb;
+}
+
+/* Focus State */
+.form-input:focus {
+  outline: none;
+  border-color: #4a3aff; /* Match focus color */
+}
+
+/* Submit Button */
+.signup-button {
+  width: 100%;
+  background-color: #4a3aff; /* Match primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Match button radius */
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: #3a2bff; /* Match hover color */
+}
+
+/* Login Link */
+.login-text {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.login-text a {
+  color: #4a3aff; /* Match link color */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .signup-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}

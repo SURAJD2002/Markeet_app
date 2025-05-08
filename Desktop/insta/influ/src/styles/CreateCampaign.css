@@ -1,0 +1,248 @@
+.create-campaign-container {
+  width: 600px;
+  max-width: 95%;
+  margin: 2rem auto;
+  margin-left: calc(240px + 2rem); /* Offset for the fixed sidebar */
+  background-color: #fff;
+  border: none;
+  border-radius: 12px; /* Match card radius */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Match shadow */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+}
+
+/* Header with title and close (X) button */
+.create-campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.create-campaign-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.close-modal-btn {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0.5rem; /* Increase touch area */
+}
+
+/* Error Message */
+.error-message {
+  font-size: 0.85rem;
+  color: #ff4d4f;
+  margin-bottom: 1rem;
+}
+
+/* Form Layout */
+.create-campaign-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #e8ecef;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  touch-action: manipulation; /* Improve touch scrolling */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #4a3aff;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px; /* Ensure enough space on mobile */
+}
+
+/* Budget Range */
+.budget-range {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.budget-input {
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+  border: 1px solid #e8ecef;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.budget-input:focus {
+  outline: none;
+  border-color: #4a3aff;
+}
+
+.range-dash {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0.5rem; /* Increase touch area */
+}
+
+.checkbox-label input {
+  margin-right: 0.4rem;
+  width: 18px; /* Larger checkbox for touch */
+  height: 18px;
+}
+
+/* Date Range for Start/End dates */
+.date-range {
+  display: flex;
+  gap: 2rem;
+}
+
+.date-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.date-input {
+  border: 1px solid #e8ecef;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #4a3aff;
+}
+
+/* Button Row */
+.button-row {
+  text-align: right;
+}
+
+.create-campaign-btn {
+  background-color: #4a3aff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  width: 100%; /* Full width on mobile */
+}
+
+.create-campaign-btn:hover {
+  background-color: #3a2bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .create-campaign-container {
+    margin-left: 1rem; /* Remove sidebar offset */
+    margin-right: 1rem;
+    padding: 1rem; /* Reduce padding for mobile */
+  }
+
+  .create-campaign-header h2 {
+    font-size: 1.25rem; /* Smaller heading */
+  }
+
+  .form-group {
+    margin-bottom: 1rem; /* Reduce spacing */
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem; /* Adjust padding */
+    font-size: 1rem; /* Larger font for readability */
+  }
+
+  .budget-range {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .budget-input {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .checkbox-group {
+    gap: 0.5rem; /* Tighter spacing */
+  }
+
+  .checkbox-label {
+    padding: 0.75rem; /* Larger touch area */
+  }
+
+  .date-range {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button-row {
+    text-align: center; /* Center button on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .create-campaign-container {
+    margin: 1rem; /* Minimal margins */
+    padding: 0.75rem;
+  }
+
+  .create-campaign-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .close-modal-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}

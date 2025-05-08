@@ -1,0 +1,334 @@
+/* ----------------------------
+   Brand Dashboard Layout
+------------------------------*/
+
+/* Overall Container */
+.brand-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f6f8; /* Light gray background */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* ----------------------------
+     SIDEBAR
+  ------------------------------*/
+  .sidebar {
+    width: 240px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .brand-logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar-nav li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-nav li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* ----------------------------
+     MAIN CONTENT
+  ------------------------------*/
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* TOP BAR */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .topbar h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .topbar-icons {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .topbar .icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* ----------------------------
+     STATS SECTION
+  ------------------------------*/
+  .stats-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    flex: 1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 160px;
+  }
+  
+  .stat-title {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Create New Campaign Button */
+  .new-campaign-btn {
+    background-color: #276ef1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+  }
+  
+  .new-campaign-btn .plus-icon {
+    font-size: 1rem;
+  }
+  
+  /* ----------------------------
+     CURRENT CAMPAIGNS SECTION
+  ------------------------------*/
+  .current-campaigns {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .current-campaigns h3 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Table Headers & Rows */
+  .campaigns-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .campaign-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    border-top: 1px solid #eee;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .campaign-row:first-of-type {
+    border-top: none;
+  }
+  
+  .campaign-cell {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Status Badges */
+  .active {
+    background-color: #e1f8e1;
+    color: #2f8f2f;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  .pending {
+    background-color: #fff8e1;
+    color: #c99c0a;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  .completed {
+    background-color: #e1e1e1;
+    color: #555;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  /* ----------------------------
+     BOTTOM ROW: Notifications & Messages
+  ------------------------------*/
+  .bottom-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .notifications-panel,
+  .messages-panel {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-width: 260px;
+  }
+  
+  .notifications-panel h4,
+  .messages-panel h4 {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  
+  .notifications-panel ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  
+  .notifications-panel li {
+    border-top: 1px solid #eee;
+    padding: 0.75rem 0;
+  }
+  
+  .notifications-panel li:first-of-type {
+    border-top: none;
+  }
+  
+  .message {
+    border-top: 1px solid #eee;
+    padding: 0.75rem 0;
+  }
+  
+  .message:first-of-type {
+    border-top: none;
+  }
+  
+  .message-sender {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .message-snippet {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.2rem;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+  
+  /* ----------------------------
+     ICON & BUTTON STYLING
+  ------------------------------*/
+  /* Icon styling for labels */
+  .icon {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+  }
+  
+  /* Close modal button */
+  .close-modal-btn {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  /* ----------------------------
+     RESPONSIVE ADJUSTMENTS
+  ------------------------------*/
+  
+  /* For screens up to 992px wide */
+  @media (max-width: 992px) {
+    .stats-section {
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      flex: 1 1 180px;
+    }
+    .current-campaigns .campaigns-header,
+    .current-campaigns .campaign-row {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For screens up to 768px wide */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Optionally replace this with a mobile menu */
+    }
+    .main-content {
+      padding: 1rem;
+    }
+    .bottom-row {
+      flex-direction: column;
+    }
+  }
+  
